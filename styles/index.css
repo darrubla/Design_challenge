@@ -81,7 +81,8 @@ main {
 
 .intro {
   display: grid;
-  grid-template-columns: 4fr 1fr 4fr;
+  /* grid-template-columns: 4fr 1fr 4fr; */
+  grid-template-columns: 44.4% auto 44.4%;
   grid-template-rows: auto;
 }
 
@@ -97,7 +98,7 @@ main {
 }
 
 .intro-info__container h2 {
-  font-size: 40px;
+  font-size: 43px;
   color: var(--dark-blue);
   line-height: 40px;
   margin-top: 20px;
@@ -114,6 +115,14 @@ main {
 
 .info-list__container {
   grid-column: 3;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 5fr;
+}
+
+.info-list__container .marks li {
+  margin-bottom: 135px;
+  width: 60px;
 }
 
 .info-list__container pre {
@@ -127,6 +136,18 @@ main {
   margin-bottom: 14px;
 }
 
+.info-list__container ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
 .info-list__container li {
   margin-bottom: 40px;
+}
+
+.info-list__container li p {
+  margin-bottom: 14px;
+  margin-top: 18px;
+  width: 65px;
+  box-shadow: none;
 }
