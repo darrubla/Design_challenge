@@ -96,6 +96,13 @@ main {
   line-height: 70px;
 }
 
+.intro-info__container h2 {
+  font-size: 40px;
+  color: var(--dark-blue);
+  line-height: 40px;
+  margin-top: 20px;
+}
+
 .intro-info__container pre {
   color: var(--dark-grayish-blue);
   margin-bottom: 35px;
@@ -103,4 +110,23 @@ main {
 
 .intro img {
   grid-column: 3;
+}
+
+.info-list__container {
+  grid-column: 3;
+}
+
+.info-list__container pre {
+  color: var(--dark-grayish-blue);
+  margin-top: 0px;
+}
+
+.info-list__container h4 {
+  font-size: 16px;
+  color: var(--dark-blue);
+  margin-bottom: 14px;
+}
+
+.info-list__container li {
+  margin-bottom: 40px;
 }
