@@ -20,26 +20,29 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url("/assets/bg-tablet-pattern.svg");
-  background-repeat: no-repeat;
-  background-position-x: 800px;
-  background-position-y: -150px;
+  background: url("/assets/bg-tablet-pattern.svg") 850px -170px no-repeat,
+    url("/assets/bg-tablet-pattern.svg") -570px 1000px no-repeat;
 }
 
 /*HEADER's STYLES*/
 header {
   margin-top: 35px;
   background-color: transparent;
+  margin-bottom: 100px;
+}
+
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-header button {
+.start {
   background-color: var(--bright-red);
   border-radius: 20px;
   border: none;
   height: 35px;
+  text-decoration: none;
   width: 120px;
   text-align: center;
   color: var(--very-pale-red);
@@ -67,4 +70,82 @@ header button {
 
 .header-list__container li > a:hover {
   color: var(--dark-grayish-blue);
+}
+
+/* MAIN */
+main {
+  margin: 0 100px;
+}
+
+.intro {
+  display: grid;
+  /* grid-template-columns: 4fr 1fr 4fr; */
+  grid-template-columns: 40% auto 47.5%;
+  grid-template-rows: auto;
+}
+
+.intro .intro-info__container {
+  grid-column: 1 / 2;
+}
+
+.intro-info__container h1 {
+  font-size: 60px;
+  color: var(--dark-blue);
+  margin-bottom: 34px;
+  line-height: 70px;
+}
+
+.intro-info__container h2 {
+  font-size: 41px;
+  color: var(--dark-blue);
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+.intro-info__container pre {
+  color: var(--dark-grayish-blue);
+  margin-bottom: 35px;
+  word-spacing: 6px;
+}
+
+.intro img {
+  grid-column: 3;
+}
+
+.info-list__container {
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.info-list__container .marks li {
+  margin-bottom: 135px;
+  width: 60px;
+}
+
+.info-list__container pre {
+  color: var(--dark-grayish-blue);
+  margin-top: 0px;
+}
+
+.info-list__container h4 {
+  font-size: 16px;
+  color: var(--dark-blue);
+  margin-bottom: 14px;
+}
+
+.info-list__container ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+.info-list__container li {
+  margin-bottom: 40px;
+}
+
+.info-list__container li p {
+  margin-bottom: 14px;
+  margin-top: 18px;
+  width: 65px;
+  box-shadow: none;
 }
