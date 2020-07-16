@@ -160,6 +160,11 @@ h2 {
   /* background: url("/assets/bg-simplify-section-desktop.svg");
   background: url("/assets/bg-tablet-pattern.svg") no-repeat; */
 }
+
+.main-simplify pre {
+  color: var(--very-pale-red);
+}
+
 .main-simplify div {
   margin: 0 100px;
   display: grid;
@@ -167,7 +172,7 @@ h2 {
 }
 
 .main-simplify a {
-  background-color: white;
+  background-color: var(--very-pale-red);
   color: var(--bright-red);
   grid-column: 2;
   align-self: center;
