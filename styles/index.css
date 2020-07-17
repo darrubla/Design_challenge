@@ -20,8 +20,10 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url("/assets/bg-tablet-pattern.svg") 850px -170px no-repeat,
-    url("/assets/bg-tablet-pattern.svg") -570px 1000px no-repeat;
+  background: url("https://github.com/darrubla/Design_challenge/blob/master/assets/bg-tablet-pattern.svg")
+      850px -170px no-repeat,
+    url("https://github.com/darrubla/Design_challenge/blob/master/assets/bg-tablet-pattern.svg") -570px
+      1000px no-repeat;
 }
 
 /*HEADER's STYLES*/
@@ -157,8 +159,9 @@ h2 {
 
 .main-simplify {
   background-color: var(--bright-red);
-  /* background: url("/assets/bg-simplify-section-desktop.svg");
-  background: url("/assets/bg-tablet-pattern.svg") no-repeat; */
+  /* background: url("/assets/bg-simplify-section-desktop.svg"); */
+  background: url("https://github.com/darrubla/Design_challenge/blob/master/assets/bg-tablet-pattern.svg")
+    no-repeat;
 }
 
 .main-simplify pre {
