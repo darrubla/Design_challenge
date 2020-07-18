@@ -20,10 +20,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url("https://github.com/darrubla/Design_challenge/blob/master/assets/bg-tablet-pattern.svg")
-      850px -170px no-repeat,
-    url("https://github.com/darrubla/Design_challenge/blob/master/assets/bg-tablet-pattern.svg") -570px
-      1000px no-repeat;
+  background: url("../assets/bg-tablet-pattern.svg") 800px -170px no-repeat,
+    url("../assets/bg-tablet-pattern.svg") -500px 1060px no-repeat;
 }
 
 /*HEADER's STYLES*/
@@ -33,17 +31,39 @@ header {
   margin-bottom: 100px;
 }
 
-nav {
+/* nav {
+  margin: 0 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+} */
+
+nav {
+  margin: 0 110px;
+  display: grid;
+  grid-template-columns: 15% auto 15%;
+  align-items: center;
+}
+
+nav img {
+  grid-column: 1 / 2;
+  justify-self: start;
+}
+
+nav ul {
+  justify-self: center;
+}
+
+nav a {
+  grid-column: 3;
+  justify-self: end;
 }
 
 .start {
   background-color: var(--bright-red);
   border-radius: 20px;
   border: none;
-  height: 35px;
+  height: 40px;
   text-decoration: none;
   width: 120px;
   text-align: center;
@@ -51,8 +71,13 @@ nav {
   box-shadow: 0 8px 6px -6px var(--dark-grayish-blue);
 }
 
+.start:hover {
+  opacity: 0.7;
+}
+
 .start span {
   vertical-align: middle;
+  font-size: 14px;
 }
 
 .header-list__container {
@@ -88,17 +113,26 @@ main {
   /* grid-template-columns: 4fr 1fr 4fr; */
   grid-template-columns: 40% auto 47.5%;
   grid-template-rows: auto;
-  margin: 0 100px;
+  margin: 0 110px;
 }
 
 .intro .intro-info__container {
   grid-column: 1 / 2;
 }
 
+.intro:first-of-type {
+  margin-bottom: 30px;
+}
+
+main .intro .intro-info__container:first-of-type {
+  display: flex;
+  flex-direction: column;
+}
+
 .intro-info__container h1 {
   font-size: 60px;
   color: var(--dark-blue);
-  margin-bottom: 34px;
+  margin-bottom: 15px;
   line-height: 70px;
 }
 
@@ -157,11 +191,76 @@ h2 {
   box-shadow: none;
 }
 
+.info-list__container li p:hover {
+  opacity: 1;
+}
+
+.carousel {
+  height: 400px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  justify-content: center;
+}
+
+.carousel h2 {
+  place-self: center;
+}
+
+.opinions__container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.opinions__container > article {
+  height: 250px;
+  width: 530px;
+  flex: 0 0 auto;
+  display: grid;
+  grid-template: 15% 20% 65% / repeat(3, 1fr);
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.opinions__container:hover > article {
+  transform: translateX(-150%);
+  transition: 10s;
+}
+
+article img {
+  grid-area: 1/ 2 / 2/ 3;
+  z-index: 2;
+  width: 40%;
+  justify-self: center;
+}
+
+article div {
+  background-color: var(--very-light-gray);
+  grid-area: 2 / 1 / baseline/ 4;
+  display: grid;
+  justify-content: center;
+}
+
+article div > article {
+  grid-row: 3;
+}
+
+div > article > h4 {
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+article article pre {
+  text-align: center;
+  color: var(--dark-grayish-blue);
+}
+
 .main-simplify {
   background-color: var(--bright-red);
   /* background: url("/assets/bg-simplify-section-desktop.svg"); */
-  background: url("https://github.com/darrubla/Design_challenge/blob/master/assets/bg-tablet-pattern.svg")
-    no-repeat;
+  /* background: url("https://github.com/darrubla/Design_challenge/blob/master/assets/bg-tablet-pattern.svg")
+    no-repeat; */
 }
 
 .main-simplify pre {
@@ -169,16 +268,125 @@ h2 {
 }
 
 .main-simplify div {
-  margin: 0 100px;
+  margin: 0 110px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.main-simplify a {
+.main-simplify .start {
   background-color: var(--very-pale-red);
   color: var(--bright-red);
   grid-column: 2;
   align-self: center;
   justify-self: end;
   box-shadow: none;
+}
+
+.main-simplify .start:hover {
+  opacity: 1;
+  color: hsla(12, 88%, 59%, 0.8);
+}
+
+.white-space {
+  height: 240px;
+  background: url("../assets/bg-simplify-section-desktop.svg");
+  display: grid;
+  justify-content: center;
+  align-items: start;
+}
+
+.white-space .start {
+  margin-top: 50px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--very-dark-blue);
+}
+
+.footer {
+  height: 240px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  margin: 0 110px;
+  align-items: center;
+}
+
+.icons a {
+  margin-right: 10px;
+}
+
+.footer li {
+  list-style-type: none;
+  color: var(--very-pale-red);
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-1 {
+  grid-column: 1;
+  display: grid;
+  height: inherit;
+  align-content: space-evenly;
+  justify-content: start;
+}
+
+.footer-1 img {
+  color: var(--very-pale-red);
+}
+
+.footer-2 {
+  grid-column: 2 / 3;
+}
+
+.footer-3 {
+  grid-column: 3 / 4;
+}
+
+.footer-3 li:nth-last-of-type(1) {
+  visibility: hidden;
+}
+
+h6 {
+  color: var(--dark-grayish-blue);
+}
+
+.footer-4 {
+  grid-column: 4;
+  display: grid;
+  height: inherit;
+  align-content: space-evenly;
+  justify-content: end;
+}
+
+.footer-4 input {
+  border-radius: 30px;
+  height: 40px;
+  width: 180px;
+  padding-left: 20px;
+  border: none;
+}
+
+.footer-4 .email {
+  display: flex;
+  align-items: center;
+}
+
+input:invalid {
+  border: red solid 3px;
+}
+
+input:valid {
+  border: green solid 3px;
+}
+
+.footer-4 a {
+  box-shadow: none;
+  width: 60px;
+}
+.footer-4 h6 {
+  width: fit-content;
+  padding-left: 40px;
+  margin: 12px 0;
 }
