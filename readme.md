@@ -4,7 +4,8 @@
 
 ## Desktop Version
 
-![Desktop Version](./challenge/desktop-design.jpg =100x300)
+<!-- ![Desktop Version](./challenge/desktop-design.jpg =100x300) -->
+<img src="./challenge/desktop-design.jpg" width="100px" height="300px">
 
 ### Challenge
 
