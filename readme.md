@@ -6,11 +6,11 @@ This is a Project based on a challenge that I take in order to practice and impr
 
 > ## Desktop Version
 
-<img src="./challenge/desktop-design.jpg" width="400px" height="500px">
+> > <img src="./challenge/desktop-design.jpg" width="400px" height="500px">
 
 > ## Mobile Version
 
-<img src="./challenge/mobile-design.jpg" width="150px" height="700px">
+> > <img src="./challenge/mobile-design.jpg" width="150px" height="700px">
 
 ### My solution 🚀
 
