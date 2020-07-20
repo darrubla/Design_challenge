@@ -4,7 +4,7 @@
 
 ## Desktop Version
 
-![Desktop Version](./assets/desktop-design.jpg)
+![Desktop Version](./challenge/desktop-design.jpg=100x300)
 
 ### Challenge
 
@@ -14,6 +14,14 @@ Using just HTML & CSS you must recreate the landing from the example section. Al
 
 You must do "Fork" of this project, solve the challenge and create a Pull Request to this repository.
 
+### Author
+
+- _Daniel Arrubla_ - [darrubla](https://github.com/darrubla)
+
 ### Contribute
 
 If anybody want to colaborate, you are welcome to make it from here : [Design_challenge](https://github.com/darrubla/Design_challenge/)
+
+---
+
+⌨ with ❤ by [darrubla](https://github.com/darrubla) 🤓
