@@ -30,7 +30,7 @@ You must do "Fork" of this project, solve the challenge and create a Pull Reques
 
 ### Contribute
 
-If anybody want to colaborate, you are welcome to make it from here : [Design_challenge](https://github.com/darrubla/Design_challenge/)
+If anybody wants to colaborate, you are welcome to make it from here : [Design_challenge](https://github.com/darrubla/Design_challenge/)
 
 ---
 
