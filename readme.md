@@ -4,7 +4,7 @@
 
 ## Desktop Version
 
-![Desktop Version](./challenge/desktop-design.jpg=100x300)
+![Desktop Version](./challenge/desktop-design.jpg =100x300)
 
 ### Challenge
 
@@ -16,7 +16,7 @@ You must do "Fork" of this project, solve the challenge and create a Pull Reques
 
 ### Author
 
-- _Daniel Arrubla_ - [darrubla](https://github.com/darrubla)
+- **Daniel Arrubla** - [darrubla](https://github.com/darrubla)
 
 ### Contribute
 
